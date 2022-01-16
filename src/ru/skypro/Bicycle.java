@@ -1,27 +1,9 @@
 package ru.skypro;
 
-public class Bicycle {
+public class Bicycle extends Vehicle{
 
-    private String modelName;
-    private int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Bicycle(String modelName) {
+        super(modelName, 2);
     }
 
-    public String getModelName() {
-        return modelName;
-    }
-
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
-    }
 }

@@ -1,9 +1,8 @@
 package ru.skypro;
 
-public class Car extends Bicycle{
+public class Car extends Machine{
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    public Car(String modelName) {
+        super(modelName, 4);
     }
-
 }
